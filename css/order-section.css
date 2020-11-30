@@ -1,0 +1,24 @@
+.order-section {
+  background: url(../img/bg/bg_order_main.png) center center/cover no-repeat;
+  color: #497870;
+  position: relative;
+}
+
+.order-section::after {
+  content: url("../img/bg/leaf4.png");
+  position: absolute;
+  bottom: 58px;
+  right: 1%;
+}
+
+.order-section::before {
+  content: url("../img/bg/berries_bg4.png");
+  position: absolute;
+  bottom: 69px;
+  left: 3%;
+}
+
+.order__title {
+  margin-bottom: 59px;
+}
+/*# sourceMappingURL=order-section.css.map */

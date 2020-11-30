@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,mBAAmB,CAAC;EAClB,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAE,0BAA0B,CAAC,IAAI,CAAC,MAAM,CAAC,SAAS;CAO7D;;AATD,AAGE,mBAHiB,AAGhB,OAAO,CAAC;EACP,OAAO,EAAE,+BAA+B;EACxC,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,MAAM;EACd,IAAI,EAAE,CAAC;CACR",
+    "sources": [
+        "../scss/advantages-section.scss"
+    ],
+    "names": [],
+    "file": "advantages-section.css"
+}

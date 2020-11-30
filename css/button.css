@@ -1,0 +1,42 @@
+.button {
+  font-size: 16px;
+  font-weight: 800;
+  padding: 21px 41px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button--white {
+  background-color: white;
+  color: #365A49;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.button--white:hover {
+  color: white;
+  background-color: #365A49;
+}
+
+.button--green {
+  background-color: #fff;
+  color: #2E4E3F;
+}
+
+.button--green:hover {
+  background-color: #2E4E3F;
+  color: #fff;
+}
+
+.button--transparent {
+  background-color: transparent;
+  color: #497870;
+}
+
+.button--transparent:hover {
+  color: #000;
+}
+/*# sourceMappingURL=button.css.map */

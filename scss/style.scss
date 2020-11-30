@@ -1,0 +1,33 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//colors
+$secondary-color: #ffffff;
+$main-color:#666666;
+
+//normilize
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+
+//setups
+@import 'base';
+
+//components
+@import 'greeting';
+@import 'header';
+@import 'contacts';
+@import 'menu';
+@import 'title';
+@import 'features';
+@import 'feature';
+@import 'button';
+@import 'section';
+@import 'headline';
+@import 'advantages';
+@import 'advantage';
+@import 'advantages-section';
+@import 'feedbacks';
+@import 'pictures';
+@import 'order-section';
+@import 'form';
+@import 'radio';
+@import 'fixed__menu';

@@ -1,0 +1,10 @@
+.contacts {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  &__icon--img{
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+  }
+}
