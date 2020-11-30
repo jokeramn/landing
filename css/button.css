@@ -34,6 +34,8 @@
 .button--transparent {
   background-color: transparent;
   color: #497870;
+  padding: 21px;
+  font-weight: normal;
 }
 
 .button--transparent:hover {
