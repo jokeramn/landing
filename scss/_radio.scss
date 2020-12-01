@@ -1,6 +1,6 @@
 .radio {
   display: flex;
-  margin-right: 29px;
+  margin-right: 29rem;
   cursor: pointer;
   user-select: none;
 
@@ -32,17 +32,17 @@
 }
 
 .radio__visible {
-  width: 25px;
-  height: 25px;
+  width: 25rem;
+  height: 25rem;
   position: relative;
   border-radius: 50%;
   background-color: white;
-  margin-right: 10px;
+  margin-right: 10rem;
 
   &::before {
     content: "";
-    width: 13px;
-    height: 13px;
+    width: 13rem;
+    height: 13rem;
     border-radius:50%;
     background: #365A49;
     position: absolute;

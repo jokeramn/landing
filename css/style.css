@@ -1,4 +1,8 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+html {
+  font-size: 1px;
+}
+
 html, body {
   height: 100%;
 }
@@ -92,7 +96,7 @@ footer {
   background: url("../img/bg/big-leaf1.png") right bottom no-repeat;
   background-color: #61c4d9;
   height: 100vh;
-  min-height: 650px;
+  min-height: 650rem;
   color: #ffffff;
   position: relative;
 }
@@ -100,14 +104,14 @@ footer {
 .greeting::before {
   content: url("../img/bg/leaf-1.png");
   position: absolute;
-  bottom: -40px;
+  bottom: -40rem;
   left: 2%;
 }
 
 .greeting::after {
   content: url("../img/bg/berries.png");
   position: absolute;
-  bottom: -40px;
+  bottom: -40rem;
   right: 0;
 }
 
@@ -123,7 +127,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
-  padding: 24px 0 45px;
+  padding: 24rem 0 45rem;
   background: url("../img/bg/choco1.png") right center/50% auto no-repeat;
 }
 
@@ -132,12 +136,12 @@ footer {
 }
 
 .greeting-desc__title {
-  margin-bottom: 13px;
+  margin-bottom: 13rem;
 }
 
 .greeting-desc__subheader {
-  font-size: 21px;
-  margin-bottom: 44px;
+  font-size: 21rem;
+  margin-bottom: 44rem;
   padding-right: 15%;
 }
 
@@ -152,15 +156,15 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 38px;
+  min-height: 38rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 12px;
+  padding-right: 12rem;
 }
 
 .contacts {
-  font-size: 22px;
+  font-size: 22rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,9 +174,9 @@ footer {
 }
 
 .contacts__icon--img {
-  width: 14px;
-  height: 14px;
-  margin-right: 6px;
+  width: 14rem;
+  height: 14rem;
+  margin-right: 6rem;
 }
 
 .menu__list {
@@ -185,7 +189,7 @@ footer {
 }
 
 .menu__item {
-  margin-right: 27px;
+  margin-right: 27rem;
 }
 
 .menu__item:last-child {
@@ -194,7 +198,7 @@ footer {
 
 .title {
   font-weight: bold;
-  font-size: 48px;
+  font-size: 48rem;
   text-transform: uppercase;
 }
 
@@ -215,7 +219,7 @@ footer {
 }
 
 .features__item {
-  margin-right: 46px;
+  margin-right: 46rem;
 }
 
 .features__item:last-child {
@@ -229,19 +233,19 @@ footer {
 }
 
 .feature__icon {
-  width: 45px;
-  margin-right: 7px;
+  width: 45rem;
+  margin-right: 7rem;
 }
 
 .feature__text {
-  font-size: 16px;
-  max-width: 85px;
+  font-size: 16rem;
+  max-width: 85rem;
 }
 
 .button {
-  font-size: 16px;
+  font-size: 16rem;
   font-weight: 800;
-  padding: 21px 41px;
+  padding: 21rem 41rem;
   text-transform: uppercase;
   border-radius: 100px;
   border: none;
@@ -274,7 +278,7 @@ footer {
 .button--transparent {
   background-color: transparent;
   color: #497870;
-  padding: 21px;
+  padding: 21rem;
   font-weight: normal;
 }
 
@@ -296,7 +300,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 650px;
+  min-height: 650rem;
   height: 100vh;
 }
 
@@ -305,7 +309,7 @@ footer {
 }
 
 .headline__subtitle {
-  margin-bottom: 49px;
+  margin-bottom: 49rem;
   padding: 0 26%;
 }
 
@@ -316,7 +320,7 @@ footer {
 }
 
 .advantages__title {
-  margin-bottom: 12px;
+  margin-bottom: 12rem;
 }
 
 .advantages__item {
@@ -331,7 +335,7 @@ footer {
   content: url("../img/icons/separator.png");
   position: absolute;
   left: 0;
-  top: 30px;
+  top: 30rem;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -353,21 +357,21 @@ footer {
 }
 
 .advantage__icon {
-  margin-bottom: 9px;
+  margin-bottom: 9rem;
 }
 
 .advantage__icon--wrapper {
   display: inline-block;
   position: relative;
-  width: 126px;
-  height: 126px;
+  width: 126rem;
+  height: 126rem;
   background: #F2F5F4;
   border-radius: 50%;
 }
 
 .advantage__icon--img {
-  width: 65px;
-  height: 64px;
+  width: 65rem;
+  height: 64rem;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -376,9 +380,9 @@ footer {
 }
 
 .advantage__text--title {
-  margin-bottom: 13px;
+  margin-bottom: 13rem;
   font-weight: bold;
-  font-size: 27px;
+  font-size: 27rem;
   color: #000;
 }
 
@@ -390,7 +394,7 @@ footer {
 .advantages-section::after {
   content: url("../img/bg/raspberry2.png");
   position: absolute;
-  bottom: -118px;
+  bottom: -118rem;
   left: 0;
 }
 
@@ -403,14 +407,14 @@ footer {
   content: url("../img/bg/bg3.png");
   position: absolute;
   left: 0;
-  bottom: -165px;
+  bottom: -165rem;
 }
 
 .feedbacks-section::after {
   content: url("../img/bg/berries3.png");
   position: absolute;
   left: 0;
-  bottom: -100px;
+  bottom: -100rem;
 }
 
 .feedbacks-desc {
@@ -420,34 +424,34 @@ footer {
 
 .feedbacks-desc:before {
   content: "";
-  width: 84px;
-  height: 84px;
+  width: 84rem;
+  height: 84rem;
   border-radius: 50%;
   background-color: white;
   position: absolute;
-  top: -62px;
+  top: -62rem;
   right: 50%;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
 }
 
 .feedbacks__title {
-  margin-bottom: 28px;
+  margin-bottom: 28rem;
 }
 
 .feedbacks-desc--wrapper {
   background: url("../img/bg/inner-section3.png") right top 12% no-repeat;
-  padding: 42px;
+  padding: 42rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #F8FAF9;
-  margin-bottom: 15px;
+  margin-bottom: 15rem;
 }
 
 .feedbacks__avatar {
-  height: 264px;
-  width: 253px;
+  height: 264rem;
+  width: 253rem;
 }
 
 .feedbacks__avatar--img {
@@ -461,19 +465,19 @@ footer {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-left: 40px;
-  padding-top: 20px;
+  margin-left: 40rem;
+  padding-top: 20rem;
 }
 
 .feedbacks__subtitle {
   font-weight: bold;
-  font-size: 27px;
+  font-size: 27rem;
   color: #292929;
-  margin-bottom: 12px;
+  margin-bottom: 12rem;
 }
 
 .feedbacks__text {
-  margin-bottom: 25px;
+  margin-bottom: 25rem;
   padding-right: 21%;
   line-height: 1.3;
 }
@@ -493,8 +497,8 @@ footer {
 }
 
 .picture-active {
-  width: 80px;
-  height: 80px;
+  width: 80rem;
+  height: 80rem;
   border: 6px solid transparent;
   border-radius: 50%;
   overflow: hidden;
@@ -531,19 +535,19 @@ footer {
 .order-section::after {
   content: url("../img/bg/leaf4.png");
   position: absolute;
-  bottom: 58px;
+  bottom: 58rem;
   right: 1%;
 }
 
 .order-section::before {
   content: url("../img/bg/berries_bg4.png");
   position: absolute;
-  bottom: 69px;
+  bottom: 69rem;
   left: 3%;
 }
 
 .order__title {
-  margin-bottom: 59px;
+  margin-bottom: 59rem;
 }
 
 .form {
@@ -574,7 +578,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 15rem;
 }
 
 .form__row:last-child {
@@ -594,13 +598,13 @@ footer {
 
 .form__input {
   width: 100%;
-  padding: 18px 12px;
+  padding: 18rem 12rem;
   border-radius: 4px;
   border: 3px solid transparent;
 }
 
 .form__input--textarea {
-  height: 160px;
+  height: 160rem;
   resize: none;
 }
 
@@ -611,7 +615,7 @@ footer {
 }
 
 .form__controls {
-  margin-top: 19px;
+  margin-top: 19rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -620,14 +624,14 @@ footer {
 }
 
 .form__buttons {
-  margin-top: 46px;
+  margin-top: 46rem;
 }
 
 .radio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 29px;
+  margin-right: 29rem;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -657,18 +661,18 @@ footer {
 }
 
 .radio__visible {
-  width: 25px;
-  height: 25px;
+  width: 25rem;
+  height: 25rem;
   position: relative;
   border-radius: 50%;
   background-color: white;
-  margin-right: 10px;
+  margin-right: 10rem;
 }
 
 .radio__visible::before {
   content: "";
-  width: 13px;
-  height: 13px;
+  width: 13rem;
+  height: 13rem;
   border-radius: 50%;
   background: #365A49;
   position: absolute;
@@ -686,7 +690,7 @@ footer {
 }
 
 .fixed-menu__item {
-  margin-bottom: 5px;
+  margin-bottom: 5rem;
 }
 
 .fixed-menu__item:last-child {
@@ -694,8 +698,8 @@ footer {
 }
 
 .fixed-menu__link {
-  width: 16px;
-  height: 16px;
+  width: 16rem;
+  height: 16rem;
   border-radius: 50%;
   border: 1px solid transparent;
   display: block;
@@ -709,8 +713,8 @@ footer {
 .fixed-menu__link::before {
   content: "";
   display: block;
-  width: 6px;
-  height: 6px;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
   background-color: #fff;
   position: absolute;
