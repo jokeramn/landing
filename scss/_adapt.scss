@@ -206,10 +206,41 @@
   }
 }
 
+//feedbacks 
+
+.feedbacks-section {
+  background: url(../img/bg/strawberry3.png) right -11% top 1% no-repeat;
+
+  &::before {
+    bottom: -30%;
+    left: -10%;
+    z-index: 3;
+  }
+
+  &::after {
+    left: -10%;
+    bottom: -14%;
+    z-index: 4;
+  }
+}
+
+.feedbacks-desc::before {
+  display: none;
+}
+
+.feedbacks-desc--wrapper {
+  padding: 5% 0;
+  background-size: 23%;
+}
+
 //order 
 
 .form {
   padding: 0;
+}
+
+.form__input {
+  padding: 2%;
 }
 
 .form__input--textarea {
