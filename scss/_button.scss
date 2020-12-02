@@ -21,6 +21,7 @@
 .button--green {
   background-color:#fff;
   color: #2E4E3F;
+  transition: 0.3s;
 
   &:hover {
     background-color: #2E4E3F;
@@ -33,6 +34,7 @@
   color: #497870;
   padding: 21rem;
   font-weight: normal;
+  transition: color 0.3s;
 
   &:hover {
     color: #000;

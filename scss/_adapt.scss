@@ -1,0 +1,132 @@
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  //greeting
+  .menu {
+    display: none;
+  }
+
+  .contacts {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .greeting-about {
+    display: none;
+  }
+
+  .fixed-menu {
+    display: none;
+  }
+
+  .greeting__container {
+    background: url(../img/bg/combo.png) left 47% top 27%/50% auto no-repeat;
+    padding-bottom: 204rem;
+  }
+
+  .greeting {
+    background: url(../img/bg/big-leaf1.png) right top 91rem no-repeat;
+    background-color: #61c4d9;
+
+    &::before {
+      content: none;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .greeting-desc {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .greeting-desc__title {
+    margin-bottom: 0;
+  }
+
+  .greeting-desc__subheader {
+    padding: 0 25%;
+  }
+
+  //advantages
+
+  .advantages-section {
+    background: url(../img/bg/leaf2.png) left top 15% no-repeat;
+  }
+
+  .advantages__title {
+    margin: 0;
+    line-height: 1.1;
+  }
+
+  .headline__subtitle {
+    padding: 0 20%;
+  }
+
+  .advantages__item::after {
+    display: none;
+  }
+
+  //feedbacks
+
+  .feedbacks-desc::before {
+    top: -50rem;
+  }
+
+  .feedbacks-desc--wrapper {
+    padding-top: 58rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 32rem;
+  }
+
+  .feedbacks__avatar {
+    height: 130rem;
+    width: 130rem;
+  }
+
+  .feedbacks__content {
+    margin-left: 0;
+  }
+
+  .feedbacks__text {
+    padding-right: 0;
+  }
+
+//order 
+  .order-section::before {
+    content: none;
+  }
+
+  .order-section::after{
+    content: none;
+  }
+
+  .order__title {
+    margin-bottom: 3%;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 17%;
+  }
+
+  .form__col {
+    margin: 0;
+  }
+
+  .form__buttons {
+    display: flex;
+    justify-content: center;
+  }
+}

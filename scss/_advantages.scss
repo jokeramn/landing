@@ -9,7 +9,7 @@
 
 .advantages__item {
   flex: 1;
-  padding: 0 3%;
+  padding: 0 2.3%;
   position: relative;
 
   &::after {
@@ -31,6 +31,4 @@
   &:last-child {
     padding-right: 0;
   }
-
- 
 }

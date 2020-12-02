@@ -14,8 +14,9 @@ $main-color:#666666;
 //components
 @import 'greeting';
 @import 'header';
-@import 'contacts';
 @import 'menu';
+@import 'contacts';
+@import 'burger';
 @import 'title';
 @import 'features';
 @import 'feature';
@@ -31,5 +32,4 @@ $main-color:#666666;
 @import 'form';
 @import 'radio';
 @import 'fixed__menu';
-@import 'burger';
-@import 'media_768';
+@import 'adapt';
