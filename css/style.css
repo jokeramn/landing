@@ -38,6 +38,7 @@ body {
 }
 
 .container {
+  width: auto;
   max-width: 940px;
   margin: 0 auto;
 }
@@ -159,7 +160,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 12rem;
 }
 
 .contacts {
@@ -176,6 +176,10 @@ footer {
   width: 14rem;
   height: 14rem;
   margin-right: 6rem;
+}
+
+.contacts__text--number {
+  display: block;
 }
 
 .menu__list {
@@ -721,5 +725,94 @@ footer {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.burger {
+  height: 26rem;
+  width: 24rem;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.burger__line {
+  width: 100%;
+  height: 4rem;
+  background-color: white;
+  border-radius: 4px;
+  position: relative;
+}
+
+.burger__line:before, .burger__line:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 4rem;
+  width: 100%;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.burger__line::before {
+  top: 8rem;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.burger__line::after {
+  bottom: 8rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+  .menu {
+    display: none;
+  }
+  .contacts {
+    display: none;
+  }
+  .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .greeting-about {
+    display: none;
+  }
+  .fixed-menu {
+    display: none;
+  }
+  .greeting__container {
+    background: url(../img/bg/choco1.png) left 47% top 27%/50% auto no-repeat;
+    padding-bottom: 204rem;
+  }
+  .greeting {
+    background: url(../img/bg/big-leaf1.png) right top 91rem no-repeat;
+    background-color: #61c4d9;
+  }
+  .greeting::before {
+    content: "";
+  }
+  .greeting::after {
+    right: 15%;
+    top: 17%;
+    -webkit-transform: scale(0.65);
+            transform: scale(0.65);
+  }
+  .greeting-desc {
+    max-width: 100%;
+    text-align: center;
+  }
+  .greeting-desc__title {
+    margin-bottom: 0;
+  }
+  .greeting-desc__subheader {
+    padding: 0 25%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

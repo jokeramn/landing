@@ -1,0 +1,62 @@
+@media (max-width:768px) {
+  
+
+  .container {
+    max-width: 700px;
+  }
+
+  .menu {
+    display: none;
+  }
+  
+  .contacts {
+    display: none;
+  }
+  
+  .burger {
+    display: flex;
+  }
+  
+  .greeting-about {
+    display: none;
+  }
+
+  .fixed-menu {
+    display: none;
+  }
+
+  .greeting__container {
+    background: url(../img/bg/choco1.png) left 47% top 27%/50% auto no-repeat;
+    padding-bottom: 204rem;
+  }
+
+  .greeting {
+    background: url(../img/bg/big-leaf1.png) right top 91rem no-repeat;
+    background-color: #61c4d9;
+
+    &::before {
+      content: "";
+    }
+
+    &::after {
+      right: 15%;
+      top: 17%;
+      transform: scale(0.65);
+    }
+  }
+
+  .greeting-desc {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .greeting-desc__title {
+    margin-bottom: 0;
+  }
+
+  .greeting-desc__subheader {
+    padding:0 25%;
+  }
+
+
+}
