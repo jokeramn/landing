@@ -1,4 +1,9 @@
 @media (max-width: 768px) {
+
+  html {
+    font-size: 0.9px;
+  }
+
   .container {
     max-width: 100%;
     min-height: 0;
@@ -17,7 +22,8 @@
   }
 
   .burger {
-    display: flex;
+    right: 3%;
+    opacity: 1;
   }
 
   .greeting-about {
@@ -45,6 +51,7 @@
   .greeting__container {
     background: url(../img/bg/combo.png) left 47% top 27%/50% auto no-repeat;
     padding-bottom: 204rem;
+    
   }
 
   .greeting-desc {
@@ -109,6 +116,11 @@
   }
 
 //order 
+
+  .order-section {
+    padding: 0 17%;
+  }
+
   .order-section::before {
     content: none;
   }
@@ -124,7 +136,6 @@
   .form {
     display: flex;
     flex-direction: column;
-    padding: 0 17%;
   }
 
   .form__col {
@@ -237,7 +248,7 @@
 
 //order 
 
-.form {
+.order-section {
   padding: 0;
 }
 

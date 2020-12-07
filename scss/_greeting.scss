@@ -24,6 +24,8 @@
 
 
 .greeting__container {
+  width: 95%;
+  max-width: 940px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
