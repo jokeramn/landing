@@ -2,13 +2,24 @@
   font-size: 22rem;
   display: flex;
   align-items: center;
-  &__icon--img{
-    width: 14rem;
-    height: 14rem;
-    margin-right: 6rem;
-  }
 
   &__text--number {
     display: block;
   }
+}
+
+.phone-icon {
+  display: block;
+  width: 14rem;
+  height: 14rem;
+  margin-right: 6rem;
+  fill: white;
+}
+
+.phone-icon--footer {
+  fill: #365A49;
+}
+
+.contacts__text--color {
+  color: #365A49;
 }

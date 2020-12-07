@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 100%;
     min-height: 0;
   }
   //greeting
@@ -10,6 +10,10 @@
 
   .contacts {
     display: none;
+  }
+
+  .adress-contacts {
+    display: flex;
   }
 
   .burger {
@@ -26,8 +30,7 @@
 
   .greeting {
     min-height: 0;
-    background: url(../img/bg/big-leaf1.png) right top 91rem no-repeat;
-    background-color: #61c4d9;
+    background-position:right top 91rem;
 
     &::before {
       content: none;
@@ -60,7 +63,7 @@
   //advantages
 
   .advantages-section {
-    background: url(../img/bg/leaf2.png) left top 15% no-repeat;
+    background-position:left top 15%;
   }
 
   .advantages__title {
@@ -146,14 +149,15 @@
 
 //greeting
   .greeting {
-    background: url(../img/bg/big-leaf1.png) right top 55rem no-repeat;
+    background-position: right top 55rem;
     background-size: 75%;
     background-color: #61c4d9;
   }
 
   .greeting__container {
     padding: 5% 5% 20%;
-    background: url(../img/bg/combo.png) left 47% top 17%/76% auto no-repeat;
+    background-position: left 47% top 17%;
+    background-size:76% auto;
   }
 
   .title {
@@ -191,6 +195,7 @@
 
 .advantages__item {
   padding: 0;
+  margin-bottom: 5%;
 }
 
 .advantage__text {
@@ -199,7 +204,6 @@
 
 .advantage__icon {
   margin-right: 3%;
-  margin-bottom: 5%;
 
   &:last-child {
     margin-bottom: 0;
@@ -209,18 +213,16 @@
 //feedbacks 
 
 .feedbacks-section {
-  background: url(../img/bg/strawberry3.png) right -11% top 1% no-repeat;
+  background-position: right -11% top 1%;
 
   &::before {
     bottom: -30%;
     left: -10%;
-    z-index: 3;
   }
 
   &::after {
     left: -10%;
     bottom: -14%;
-    z-index: 4;
   }
 }
 
@@ -252,11 +254,25 @@
   justify-content: center;
 }
 
+//footer
+
+.adress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__content {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 }
 
 @media (max-width: 320px) {
 
   html {
-    font-size: 0.6px;
+    font-size: 0.7px;
   }
 }

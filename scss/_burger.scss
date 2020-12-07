@@ -3,6 +3,10 @@
   width: 24rem;
   display: none;
   align-items: center;
+  position: fixed;
+  top: 3%;
+  right: 3%;
+  z-index: 50;
 }
 
 .burger__line {
