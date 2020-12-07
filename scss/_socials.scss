@@ -13,7 +13,14 @@
 }
 
 
-.social__link svg {
+.social__img {
   height: 20px;
   width: 20px;
+  fill: #B3B3B3;
+  transition: .5s;
+
+  &:hover {
+    fill: #292929;
+    transition: .5s;
+  }
 }
