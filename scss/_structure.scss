@@ -1,0 +1,39 @@
+.slider__structure {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transition: .5s ease;
+  color: #000;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.structure__list {
+  display: flex;
+  min-width: 273rem;
+  min-height: 344rem;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 28rem;
+  background: rgb(255, 255, 255);
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+
+.structure__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.structure__review {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.structure__img {
+  width: 32rem;
+  height: 25rem;
+  margin-right: 5%;
+}

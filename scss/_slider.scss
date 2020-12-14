@@ -8,14 +8,14 @@
 
 .slider-arrow {
   display: block;
-  width: 20px;
+  width: 20rem;
   position: absolute;
 }
 
 .slider-arrow--left {
   transform: rotateY(180deg);
   top: 30%;
-  left: -5%;
+  left: -1%;
   
 }
 
@@ -40,6 +40,7 @@
 }
 
 .slider-composition__block {
+  cursor: pointer;
   position: relative;
   width: 91rem;
   height: 91rem;
@@ -53,6 +54,11 @@
   font-weight: bold;
   font-size: 14rem;
   margin-bottom: 10%;
+
+  &:hover .slider__structure {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .slider-composition--img {
