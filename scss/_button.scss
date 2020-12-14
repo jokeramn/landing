@@ -40,3 +40,14 @@
     color: #000;
   }
 }
+
+.button--slider {
+  background: #497870;
+  color: white;
+  transition: .4s ease;
+
+  &:hover {
+    color: #497870;
+    background: wheat;
+  }
+}
