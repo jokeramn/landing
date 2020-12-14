@@ -981,12 +981,12 @@ footer {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
   top: 30%;
-  left: -1%;
+  left: -5%;
 }
 
 .slider-arrow--right {
   top: 30%;
-  right: -1%;
+  right: -5%;
 }
 
 .arrow {
@@ -1044,7 +1044,7 @@ footer {
   visibility: visible;
 }
 
-.slider-composition--img {
+.slider-composition__block--img {
   width: 50%;
   height: 50%;
   fill: white;
