@@ -15,13 +15,13 @@
 .slider-arrow--left {
   transform: rotateY(180deg);
   top: 30%;
-  left: -5%;
+  left: -2%;
   
 }
 
 .slider-arrow--right {
   top: 30%;
-  right: -5%;
+  right: -2%;
 }
 
 .arrow {
@@ -54,6 +54,11 @@
   font-weight: bold;
   font-size: 14rem;
   margin-bottom: 10%;
+  transition: background .5s ease;
+
+  &:hover {
+    background:#60AACC;
+  }
 
   &:hover .slider__structure {
     opacity: 1;

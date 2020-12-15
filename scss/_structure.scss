@@ -6,6 +6,15 @@
   color: #000;
   opacity: 0;
   visibility: hidden;
+
+  &:hover::after {
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 300px;
+    transform: translateX(-100%);
+    top: 90px;
+  }
 }
 
 .structure__list {
@@ -15,7 +24,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 28rem;
-  background: rgb(255, 255, 255);
+  background: #F2F5F4;
   box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
 }
