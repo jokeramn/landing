@@ -19,13 +19,13 @@
 }
 
 .button--green {
-  background-color:#fff;
-  color: #2E4E3F;
+  background-color: #2E4E3F;
+  color: #fff;
   transition: 0.3s;
 
   &:hover {
-    background-color: #2E4E3F;
-    color: #fff;;
+    background-color: #fff;
+    color:  #2E4E3F;;
   }
 }
 

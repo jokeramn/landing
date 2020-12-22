@@ -1,0 +1,26 @@
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius:5px;
+}
+
+.modal--error {
+  .modal__message {
+      color: red;
+  }
+}
+
+.modal-content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+
+.modal__message {
+  margin-bottom: 5%;
+  font-weight: 500;
+  color: #000;
+}

@@ -3,19 +3,20 @@
   justify-content: center;
 }
 
-.picture-active {
+.picture {
   width: 80rem;
   height: 80rem;
   border: 6px solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  &:hover {
-    border: 6px solid #365A49;
-  }
 }
 
-.picture-active__link {
+.picture--active {
+  border: 6px solid #365A49;
+}
+
+.picture__link {
   position: absolute;
   top: 0;
   right: 0;
@@ -24,7 +25,7 @@
   display: block;
 }
 
-.picture-active__img {
+.picture__img {
   height: 100%;
   width: 100%;
   object-fit: cover;

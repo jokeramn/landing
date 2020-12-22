@@ -44,9 +44,22 @@
 .feedbacks-desc--wrapper {
   background: url('../img/bg/inner-section3.png') right top 12% no-repeat;
   padding: 42rem;
-  display: flex;
   background-color: #F8FAF9;
   margin-bottom: 15rem;
+}
+
+.feedbacks__item {
+  display: flex;
+  position: absolute;
+  left: 9999px;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.feedbacks__item--active {
+  position: static;
+  left: 0;
+  opacity: 1;
 }
 
 .feedbacks__avatar {

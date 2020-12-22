@@ -28,6 +28,16 @@
   width: 100%;
 }
 
+.slider-content {
+
+  .bx-wrapper {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+  }
+
+}
+
 .slider {
   display: flex;
   justify-content: space-between;
