@@ -1,0 +1,30 @@
+.contacts {
+  padding-top: 4px;
+  font-size: 22rem;
+  display: flex;
+  align-items: center;
+
+  &__text--number {
+    display: block;
+  }
+}
+
+.phone-icon {
+  display: block;
+  width: 14rem;
+  height: 14rem;
+  margin-right: 6rem;
+  fill: white;
+}
+
+.phone-icon--footer {
+  fill: #365A49;
+}
+
+.contacts__text--color {
+  color: #365A49;
+}
+
+.contacts__text--number {
+  white-space: nowrap;
+}

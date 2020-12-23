@@ -1,0 +1,34 @@
+.advantages {
+  display: flex;
+}
+
+.advantages__title {
+  margin-bottom: 12rem;
+}
+
+
+.advantages__item {
+  flex: 1;
+  padding: 0 2.3%;
+  position: relative;
+
+  &::after {
+    content: url('../img/icons/separator.png');
+    position: absolute;
+    left: 0;
+    top: 30rem;
+    transform: translateX(-50%);
+  }
+
+  &:first-child::after {
+    display: none;
+  }
+
+  &:first-child {
+    padding-left: 0;
+  } 
+
+  &:last-child {
+    padding-right: 0;
+  }
+}

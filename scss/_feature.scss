@@ -1,0 +1,19 @@
+.feature {
+  display: flex;
+}
+
+.feature__icon {
+  width: 45rem;
+  margin-right: 7rem;
+}
+
+.feature__icon--img {
+  width: 45rem;
+  height: 45rem;
+  fill: white;
+}
+
+.feature__text {
+  font-size: 16rem;
+  max-width: 85rem;
+}

@@ -1,0 +1,10 @@
+.advantages-section {
+  position: relative;
+  background: url('../img/bg/leaf2.png') left center no-repeat;
+  &::after {
+    content: url('../img/bg/raspberry2.png');
+    position: absolute;
+    bottom: -118rem;
+    left: 0;
+  }
+}

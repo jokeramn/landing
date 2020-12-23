@@ -1,0 +1,53 @@
+.button {
+  font-size: 16rem;
+  font-weight: 800;
+  padding: 21rem 41rem;
+  text-transform: uppercase;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  &--white {
+    background-color: white;
+    color: #365A49;
+    transition: .5s;
+    &:hover {
+      color: white;
+      background-color:#365A49;
+  }
+  }
+}
+
+.button--green {
+  background-color: #2E4E3F;
+  color: #fff;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #fff;
+    color:  #2E4E3F;;
+  }
+}
+
+.button--transparent {
+  background-color:transparent;
+  color: #497870;
+  padding: 21rem;
+  font-weight: normal;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+.button--slider {
+  background: #497870;
+  color: white;
+  transition: .4s ease;
+
+  &:hover {
+    color: #497870;
+    background: wheat;
+  }
+}
