@@ -811,7 +811,7 @@ footer {
 .fixed-menu {
   position: fixed;
   top: 20%;
-  right: 3%;
+  right: 2%;
   z-index: 50;
 }
 
@@ -1350,7 +1350,7 @@ footer {
   height: 100%;
   position: absolute;
   top: 0;
-  right: 6%;
+  right: 4%;
 }
 
 .menu-accord__list {
@@ -1375,14 +1375,19 @@ footer {
 /* .menu-accord__subtitle {
 } */
 .menu-accord__text {
-  display: none;
-  border: 1px solid black;
-  padding: 10%;
-  width: 30vw;
+  visibility: hidden;
+  opacity: 0;
+  padding: 0;
+  width: 0;
+  -webkit-transition: opacity .7s;
+  transition: opacity .7s;
 }
 
 .menu-accord__item--active .menu-accord__text {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  width: 30vh;
+  padding: 10%;
 }
 
 @media (max-width: 768px) {
