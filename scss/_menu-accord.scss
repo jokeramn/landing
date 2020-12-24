@@ -3,6 +3,7 @@
   height: 100vh;
   background: url("../img/menu-accord/accord-bg.png") center / cover no-repeat;
 }
+
 .menu-accord__title {
   font-weight: bold;
   font-size: 48rem;
@@ -12,22 +13,36 @@
   text-transform: uppercase;
 }
 
-.menu-accord__list {
-
+.menu-accord__content {
+ height: 100%;
+ position: absolute;
+ top: 0;
+ right: 6%;
 }
+
+.menu-accord__list {
+  display: flex;
+  height: inherit;
+}
+
 .menu-accord__item {
   border: 1px solid black;
-  padding: 20px;
+  display: flex;
 }
 
 .menu-accord__preview {
   cursor: pointer;
+  max-width: 100rem;
 }
+
+/* .menu-accord__subtitle {
+} */
 
 .menu-accord__text {
   display: none;
-  padding: 20px;
   border:1px solid black;
+  padding: 10%;
+  width:30vw;
 }
 
 .menu-accord__item--active {
