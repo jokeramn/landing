@@ -1331,6 +1331,40 @@ footer {
   color: #000;
 }
 
+.menu-accord-section {
+  position: relative;
+  height: 100vh;
+  background: url("../img/menu-accord/accord-bg.png") center/cover no-repeat;
+}
+
+.menu-accord__title {
+  font-weight: bold;
+  font-size: 48rem;
+  color: white;
+  text-align: left;
+  padding-top: 10%;
+  text-transform: uppercase;
+}
+
+.menu-accord__item {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.menu-accord__preview {
+  cursor: pointer;
+}
+
+.menu-accord__text {
+  display: none;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.menu-accord__item--active .menu-accord__text {
+  display: block;
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 0.9px;
