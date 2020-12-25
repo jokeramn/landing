@@ -1369,7 +1369,12 @@ footer {
 
 .menu-accord__preview {
   cursor: pointer;
-  max-width: 100rem;
+  max-width: 102rem;
+}
+
+.menu-accord__preview-image1 {
+  background: url("../img/menu-accord/milk-bg.png") center no-repeat;
+  background-size: cover;
 }
 
 /* .menu-accord__subtitle {
