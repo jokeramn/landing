@@ -2,22 +2,22 @@
   position: relative;
   height: 100vh;
   background: url("../img/menu-accord/accord-bg.png") center / cover no-repeat;
+  color: white;
 }
 
 .menu-accord__title {
   font-weight: bold;
   font-size: 48rem;
-  color: white;
   text-align: left;
   padding-top: 10%;
   text-transform: uppercase;
 }
 
 .menu-accord__content {
- height: 100%;
- position: absolute;
- top: 0;
- right: 4%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 4%;
 }
 
 .menu-accord__list {
@@ -26,35 +26,46 @@
 }
 
 .menu-accord__item {
-  border: 1px solid black;
   display: flex;
 }
 
 .menu-accord__preview {
   cursor: pointer;
   max-width: 102rem;
-   &-image1 {
-    background:url('../img/menu-accord/milk-bg.png') center no-repeat;
-    background-size: cover;
-   }
+  &-image1 {
+    background: url("../img/menu-accord/milk-bg.png") center/cover no-repeat;
+  }
+  &-image2 {
+    background: url("../img/menu-accord/fruit-bg.png") center/cover no-repeat;
+  }
+  &-image3 {
+    background: url("../img/menu-accord/wild-bg.png") center/cover no-repeat;
+  }
 }
 
-/* .menu-accord__subtitle {
-} */
+.menu-accord__subtitle {
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg) translateX(-85vh);
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 48rem;
+}
 
 .menu-accord__text {
+  background: rgba(51, 53, 55, 0.9);
   visibility: hidden;
   opacity: 0;
   padding: 0;
-  width:0;
-  transition: opacity .7s;
+  width: 0;
+  transition: 0.7s;
+  overflow: hidden;
 }
 
 .menu-accord__item--active {
   .menu-accord__text {
     visibility: visible;
     opacity: 1;
-    width: 30vh;
-    padding: 10%;
+    width: 524rem;
+    padding: 5%;
   }
 }
