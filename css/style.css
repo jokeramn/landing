@@ -1411,6 +1411,109 @@ footer {
   padding: 5%;
 }
 
+.player-section__container {
+  position: relative;
+}
+
+.section__title {
+  font-weight: bold;
+  font-size: 48rem;
+  color: #292929;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 3%;
+}
+
+.player__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 35px;
+  background-color: #404040;
+}
+
+.player__start {
+  position: relative;
+  cursor: pointer;
+  border: 10px solid transparent;
+  outline: none;
+  background-color: transparent;
+  border-left: 12px solid #626262;
+  border-right-width: 0;
+  padding: 0;
+}
+
+.player--paused .player__start {
+  width: 12px;
+  height: 20px;
+  border: none;
+}
+
+.player--paused .player__start::before, .player--paused .player__start::after {
+  content: '';
+  width: 4px;
+  background-color: #626262;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 4px;
+}
+
+.player--paused .player__start::before {
+  left: 0;
+}
+
+.player--paused .player__start::after {
+  right: 0;
+}
+
+.player__playback {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding: 0 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.player__playback-button {
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  border: transparent;
+  background-color: #626262;
+  outline: transparent;
+  padding: 0;
+  position: relative;
+}
+
+.player__playback-button:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #626262;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 0.9px;
