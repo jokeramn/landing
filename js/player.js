@@ -5,17 +5,32 @@ let eventsInit = () => {
   $('.player__start').click(e => {
     e.preventDefault();
 
-    const btn = $(e.currentTarget);
-
     if (playerContainer.hasClass('player--paused')) {
-      playerContainer.removeClass('player--paused');
       player.pauseVideo();
     } else {
-      playerContainer.addClass('player--paused');
       player.playVideo();
     }
   });
+
+  $('.player__playback').click(e => {
+    const bar = $(e.currentTarget);
+    const clickedPosition = e.originalEvent.layerX;
+    const newButtonPositionPercent = (clickedPosition / bar.width()) * 100;
+    const newPlaybackPosition = (player.getDuration() / 100) * newButtonPositionPercent;
+
+    $('.player__playback-button').css({
+      left: `${newButtonPositionPercent}%`
+    });
+
+    player.seekTo(newPlaybackPosition);
+  });
+
+  $('.player__splash').click(e => {
+    player.playVideo();
+  });
 };
+
+eventsInit();
 
 const formatTime = timeSec => {
   const roundTime = Math.round(timeSec);
@@ -41,9 +56,34 @@ const onPlayerReady = () => {
 
   interval = setInterval(() => {
     const completedSec = player.getCurrentTime();
+    const completedPersent = (completedSec / durationSec) * 100;
+
+    $('.player__playback-button').css({
+      left: `${completedPersent}%`
+    });
 
     $('.player__duration-completed').text(formatTime(completedSec));
   }, 1000);
+};
+
+const onPlayerStateChange = event => {
+  /*   -1(воспроизведение видео не начато)
+    0(воспроизведение видео завершено)
+    1(воспроизведение)
+    2(пауза)
+    3(буферизация)
+    5(видео подают реплики) */
+  switch (event.data) {
+    case 1:
+      playerContainer.addClass('player--active');
+      playerContainer.addClass('player--paused');
+      break;
+
+    case 2:
+      playerContainer.removeClass('player--active');
+      playerContainer.removeClass('player--paused');
+      break;
+  }
 };
 
 function onYouTubeIframeAPIReady() {
@@ -53,12 +93,10 @@ function onYouTubeIframeAPIReady() {
     videoId: 'aqAxCVD2U80',
     events: {
       'onReady': onPlayerReady,
-      /* 'onStateChange': onPlayerStateChange */
+      'onStateChange': onPlayerStateChange
     },
     playerVars: {
       controls: 0,
     }
   });
 }
-
-eventsInit();

@@ -1,5 +1,8 @@
-.player-section__container {
+.player{
   position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .section__title {
@@ -9,6 +12,30 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 3%;
+}
+
+.player__splash {
+  background: url('../img/player/bg-player.png') center/ cover;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  &::after {
+    content: url('../img/player/corner.png');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.player--active {
+  .player__splash {
+    display: none;
+  }
 }
 
 .player__controls {
@@ -31,7 +58,7 @@
   outline: none;
   background-color: transparent;
   border-left: 12px solid #626262;
-  border-right-width:0;
+  border-right-width: 0;
   padding: 0;
 }
 
@@ -43,9 +70,9 @@
 
     &::before,
     &::after {
-      content: '';
+      content: "";
       width: 4px;
-      background-color:#626262;
+      background-color: #626262;
       display: block;
       position: absolute;
       top: 0;
@@ -57,39 +84,42 @@
       left: 0;
     }
 
-    &::after{
+    &::after {
       right: 0;
     }
   }
 }
 
-
 .player__playback {
-  flex: 2;
-  padding: 0 5%;
-  display: flex;
-}
-
-.player__playback-button {
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  border: transparent;
-  background-color: #626262;
-  outline: transparent;
-  padding: 0;
+  width: 450px;
   position: relative;
 
-  &:after {
+  &:before {
     content: "";
     position: absolute;
     display: block;
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
+    height: 6px;
+    border-radius: 12px;
+    width: 100%;
     background-color: #626262;
     top: 50%;
     left: 0;
+    right: 0;
     transform: translateY(-50%);
   }
+
+}
+
+  .player__playback-button {
+    position: absolute;
+    width: 12px;
+    outline: none;
+    height: 12px;
+    border-radius:50%;
+    padding: 0;
+    border: none;
+    background-color:#626262;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
