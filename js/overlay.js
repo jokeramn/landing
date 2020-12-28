@@ -6,7 +6,7 @@ let links = document.querySelectorAll('.overlay-menu__link');
 
 links.forEach(function(element){
   element.addEventListener('click' , toggleMenu);
-})
+});
 
 function toggleMenu(){
   burger.classList.toggle('burger--active');

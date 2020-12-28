@@ -100,3 +100,30 @@ function onYouTubeIframeAPIReady() {
     }
   });
 }
+
+let volumeClick = $('.player__volume-mute').on('click', e => {
+  e.preventDefault();
+  volumeClick.toggleClass('player__volume--active');
+
+  if (volumeClick.hasClass('player__volume--active')) {
+    player.mute();
+  } else {
+    player.unMute();
+  }
+})
+
+$('.player__volume-bar').click(e => {
+  const bar = $(e.currentTarget);
+  const clickedPosition = e.originalEvent.layerX;
+  const newButtonPositionPercent = (clickedPosition / bar.width()) * 100;
+  const newVolumePosition = (player.getVolume() / 100) * newButtonPositionPercent;
+  
+  $('.player__volume-button').css({
+    left: `${newButtonPositionPercent}%`
+  });
+
+  console.log(newVolumePosition);
+  player.setVolume(newVolumePosition);
+
+});
+

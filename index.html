@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -802,7 +802,9 @@
           <div class="menu-accord__content">
             <ul class="menu-accord__list">
               <li class="menu-accord__item">
-                <div class="menu-accord__preview menu-accord__preview-image1"><h3 class="menu-accord__subtitle">Батночики с молоком</h3></div>
+                <div class="menu-accord__preview menu-accord__preview-image1">
+                  <h3 class="menu-accord__subtitle">Батночики с молоком</h3>
+                </div>
                 <div class="menu-accord__text">
                   <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком.Так и вкуснее, и
                     полезнее.Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг.Как
@@ -811,7 +813,9 @@
                 </div>
               </li>
               <li class="menu-accord__item">
-                <div class="menu-accord__preview menu-accord__preview-image2"><h3 class="menu-accord__subtitle">С мёдом и фруктами</h3></div>
+                <div class="menu-accord__preview menu-accord__preview-image2">
+                  <h3 class="menu-accord__subtitle">С мёдом и фруктами</h3>
+                </div>
                 <div class="menu-accord__text">
                   <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком.Так и вкуснее, и
                     полезнее.Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг.Как
@@ -820,7 +824,9 @@
                 </div>
               </li>
               <li class="menu-accord__item">
-                <div class="menu-accord__preview menu-accord__preview-image3"><h3 class="menu-accord__subtitle">Дикие ягоды</h3></div>
+                <div class="menu-accord__preview menu-accord__preview-image3">
+                  <h3 class="menu-accord__subtitle">Дикие ягоды</h3>
+                </div>
                 <div class="menu-accord__text">
                   <p>
                     Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком.Так и вкуснее, и
@@ -919,12 +925,16 @@
               <div class="player__controls">
                 <button class="player__start"></button>
                 <div class="player__playback">
-                  <button class="player__playback-button"></button>
+                  <button class="player__playback-button btn-play"></button>
                 </div>
                 <div class="player__duration">
                   <span class="player__duration-completed">0:00</span> :
                   <span class="player__duration-estimate">0:00</span>
                 </div>
+                <button class="player__volume-mute"><svg class="player__volume-icon">
+                    <use xlink:href="img/icons/sprite.svg#mute"></use>
+                  </svg></button>
+                <div class="player__volume-bar"><button class="player__volume-button btn-play"></button></div>
               </div>
             </div>
           </div>
@@ -1005,9 +1015,8 @@
           </form>
         </div>
       </section>
-      <section class="section map-section">
-        <div class="container">
-        </div>
+      <section class="section map-section" id="map">
+      
       </section>
       <footer class="footer">
         <div class="container">
@@ -1129,6 +1138,9 @@
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="js/form.js"></script>
   <script src="js/accord-menu.js"></script>
-  <script src= "https://www.youtube.com/iframe_api"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  </script>
   <script src="js/player.js"></script>
+  <script src="js/map.js"></script>
 </body>

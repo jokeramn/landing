@@ -22,7 +22,6 @@ body {
 
 .wrapper {
   position: relative;
-  width: 100%;
   // min-width: $containerWidth + 20px;
   display: flex;
   flex-direction: column;
@@ -38,6 +37,7 @@ body {
   width: auto;
   max-width: $containerWidth;
   margin: 0 auto;
+  width: 95%;
 }
 
 // tag styles reset

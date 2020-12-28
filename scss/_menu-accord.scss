@@ -53,19 +53,12 @@
 
 .menu-accord__text {
   background: rgba(51, 53, 55, 0.9);
-  visibility: hidden;
-  opacity: 0;
-  padding: 0;
   width: 0;
   transition: 0.7s;
   overflow: hidden;
 }
 
-.menu-accord__item--active {
-  .menu-accord__text {
-    visibility: visible;
-    opacity: 1;
-    width: 524rem;
-    padding: 5%;
-  }
+.menu-accord__text p {
+  padding: 5%;
+  font-size: 16rem;
 }
