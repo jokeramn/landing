@@ -22,15 +22,16 @@ body {
 
 .wrapper {
   position: relative;
-  // min-width: $containerWidth + 20px;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
+  
 }
 
-.wrapper__content {
-  flex: 1;
+.wrapper-content {
+  height: 100%;
+  transition: transform .5s;
+  will-change: transform;
 }
 
 .container {

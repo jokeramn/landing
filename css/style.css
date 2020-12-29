@@ -20,21 +20,18 @@ body {
 
 .wrapper {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
-.wrapper__content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+.wrapper-content {
+  height: 100%;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  will-change: transform;
 }
 
 .container {
@@ -96,7 +93,8 @@ footer {
 .greeting {
   background: url("../img/bg/big-leaf1.png") right bottom no-repeat;
   background-color: #61c4d9;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
   min-height: 650rem;
   color: #ffffff;
   position: relative;
@@ -401,7 +399,8 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   min-height: 650rem;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
 }
 
 .headline {
@@ -803,6 +802,10 @@ footer {
           transform: translate(-50%, -50%);
 }
 
+.map-section {
+  position: relative;
+}
+
 .fixed-menu {
   position: fixed;
   top: 20%;
@@ -827,10 +830,6 @@ footer {
   position: relative;
 }
 
-.fixed-menu__link--active {
-  border-color: white;
-}
-
 .fixed-menu__link::before {
   content: "";
   display: block;
@@ -845,8 +844,26 @@ footer {
           transform: translate(-50%, -50%);
 }
 
+.fixed-menu__item--active .fixed-menu__link {
+  border-color: white;
+}
+
+.fixed-menu--black .fixed-menu__link::before {
+  background-color: black;
+}
+
+.fixed-menu--black .fixed-menu__item--active .fixed-menu__link {
+  border-color: black;
+}
+
 .footer {
   padding: 1% 1%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background-color: white;
 }
 
 .footer__content {
@@ -1399,6 +1416,7 @@ footer {
 .menu-accord__text p {
   padding: 5%;
   font-size: 16rem;
+  opacity: .7;
 }
 
 .player {

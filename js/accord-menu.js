@@ -1,18 +1,26 @@
 const mesureWidth = (item) => {
+  let reqItemWidth = 0;
   const screenWidth = $(window).width();
   const container = item.closest('.menu-accord__list');
   const previewBlocks = container.find('.menu-accord__preview');
   const previewWidth =previewBlocks.width() * previewBlocks.length;
 
+  const textContainer = item.find('.menu-accord__text');
+  const paddingLeft = parseInt(textContainer.css("padding-left"));
+  const paddingRight = parseInt(textContainer.css("padding-right"));
+
   const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
   if(isMobile) {
-    return screenWidth - previewWidth;
+    reqItemWidth = screenWidth - previewWidth;
   } else {
-    return 400;
+    reqItemWidth = 400;
   }
 
-  
+  return {
+    container: reqItemWidth,
+    textContainer: reqItemWidth - paddingRight - paddingLeft
+  };
 };
 
 const closeEveryItemInContainer = container => {
@@ -26,8 +34,11 @@ const closeEveryItemInContainer = container => {
 const opensItem = item => {
   const hiddenContent = item.find('.menu-accord__text');
   const reqWidth = mesureWidth(item);
+  const textBlock = item.find('.menu-accord__text');
+
   item.addClass('menu-accord__item--active');
-  hiddenContent.width(reqWidth);
+  hiddenContent.width(reqWidth.container);
+  textBlock.width(reqWidth.textContainer);
 };
 
 $('.menu-accord__preview').on('click', e =>{

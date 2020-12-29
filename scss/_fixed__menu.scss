@@ -8,7 +8,6 @@
 .fixed-menu__item {
   margin-bottom: 5rem;
 
-
   &:last-child {
     margin-bottom: 0;
   }
@@ -22,9 +21,6 @@
   display: block;
   position: relative;
 
-  &--active {
-    border-color: white;
-  }
 
   &::before {
     content: "";
@@ -32,10 +28,31 @@
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
-    background-color:#fff;
+    background-color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+.fixed-menu__item--active {
+  .fixed-menu__link{
+    border-color: white;
+  }
+  
+}
+
+.fixed-menu--black {
+  .fixed-menu__link {
+    &::before {
+      background-color: black;
+    }
+  }
+  .fixed-menu__item--active {
+    .fixed-menu__link{
+      border-color: black;
+  }
+}
+
 }
