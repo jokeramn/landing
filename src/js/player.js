@@ -103,7 +103,7 @@ function onYouTubeIframeAPIReady() {
 
 const volumeLevel = $('.player__volume-range')
 
-$(".player__volume-mute").click(e => {
+$(".player__volume-mute").click( (e) => {
   e.preventDefault();
   const playerVolumeMuteBtn = $(".player__volume-mute")
 
